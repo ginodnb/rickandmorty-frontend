@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Rick from "../Rick.jpg";
 import 'primeicons/primeicons.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
