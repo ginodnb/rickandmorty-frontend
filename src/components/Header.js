@@ -20,12 +20,14 @@ function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                <Nav.Link href="#">Home</Nav.Link>
+                {/* <Nav.Link href="#">Home</Nav.Link> */}
                 <Link to={"/Home"} >Home</Link>
                 
                 <Link to={"/Favourites"} >Favourites</Link>
                 {/* <Nav.Link href="#link">Favourites</Nav.Link> */}
-                <Nav.Link href="#link">Episodes</Nav.Link>
+                {/* <Nav.Link href="#link">Episodes</Nav.Link> */}
+                <Link to={"/Episodes"} >Episodes</Link>
+                <Link to={"/GetEpisodes"} >Get Episodes</Link>
                 <NavDropdown title="My Account" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Account</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
