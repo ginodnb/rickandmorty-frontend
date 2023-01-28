@@ -2,12 +2,14 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "../styles/Hero.css";
+import HomeWelcome from "./HomeWelcome";
 
 
-function Hero () {
+function Home () {
     return (
         <>
-        <Card id="cardOne" className="cards">
+        <HomeWelcome />
+        {/* <Card id="cardOne" className="cards">
         <Card.Body>
           <Card.Title>Rick And Morty Fansite</Card.Title>
           <Card.Text>
@@ -21,9 +23,9 @@ function Hero () {
         <Card className="cards" style={{ width: '50vw' }}>
           <Card.Img id="hero" variant="top" src="https://cdn.mos.cms.futurecdn.net/3ZESUwtuMsNyPmxGCMptW3.png" />
 
-        </Card>
+        </Card> */}
         </>
       );
     }
 
-export default Hero;
+export default Home;

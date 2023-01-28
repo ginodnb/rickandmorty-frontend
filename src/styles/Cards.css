@@ -1,0 +1,11 @@
+#cards {
+    width: 18rem;
+    margin: 10px;
+    background-color: #1d7eb6;
+}
+
+#episode-render {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

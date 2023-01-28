@@ -13,27 +13,24 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" variant="dark" sticky="top" expand="lg">
             <Container>
                 <img className="logo" src={Rick} />
             <Navbar.Brand href="#home"></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle id="burger" aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                 {/* <Nav.Link href="#">Home</Nav.Link> */}
-                <Link to={"/Home"} >Home</Link>
+                <Link className="links" to={"/Home"} >Home</Link>
+                <Link className="links" to={"/Profile"} >Profile</Link>
                 
-                <Link to={"/Favourites"} >Favourites</Link>
+                <Link className="links" to={"/Favourites"} >Favourites</Link>
                 {/* <Nav.Link href="#link">Favourites</Nav.Link> */}
                 {/* <Nav.Link href="#link">Episodes</Nav.Link> */}
-                <Link to={"/Episodes"} >Episodes</Link>
-                <Link to={"/GetEpisodes"} >Get Episodes</Link>
+                <Link className="links" to={"/Episodes"} >Episodes</Link>
+                <Link className="links" to={"/Characters"} >Characters</Link>
                 <NavDropdown title="My Account" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Account</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">
-                        Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action/3.4">
                         Logout

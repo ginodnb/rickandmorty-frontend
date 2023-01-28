@@ -1,0 +1,14 @@
+/* #root {
+    padding-bottom:60px;
+} */
+
+#footer {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#footerCard {
+    display: flex;
+    justify-content: space-evenly;
+
+}

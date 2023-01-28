@@ -3,11 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "../styles/Hero.css";
 import GetEpisodes from "./GetEpisodes";
-import { Splitter, SplitterPanel } from 'primereact/splitter';
 
 
 
-function Episodes () {
+function HomeWelcome () {
     return (
         <>
         <div id="card-parent" >
@@ -15,7 +14,7 @@ function Episodes () {
         <Card.Body>
           <Card.Title>Rick And Morty Fansite</Card.Title>
           <Card.Text>
-            Choose your favourites!
+            Welcome! Take a look around
           </Card.Text>
           {/* <Button variant="success">Go somewhere</Button> */}
         </Card.Body>
@@ -27,10 +26,10 @@ function Episodes () {
 
         </Card>
         </div>
-        <GetEpisodes></GetEpisodes>
+
 
         </>
       );
     }
 
-export default Episodes;
+export default HomeWelcome;
