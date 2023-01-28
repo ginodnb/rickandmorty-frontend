@@ -1,3 +1,36 @@
 .logo {
     width: 35px;
 }
+
+#footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+.cardStyle {
+    background-color: #F95B03;
+}
+
+.me-auto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    padding-right: 10px;
+    color: rgb(241, 239, 222);
+}
+
+#basic-nav-dropdown {
+    color: rgb(241, 239, 222);
+}
+
+#burger {
+    color: rgb(241, 239, 222);
+}
+

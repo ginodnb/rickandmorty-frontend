@@ -7,7 +7,7 @@ import { Splitter, SplitterPanel } from 'primereact/splitter';
 
 
 
-function Episodes () {
+function CharTop () {
     return (
         <>
         <div id="card-parent" >
@@ -15,9 +15,9 @@ function Episodes () {
         <Card.Body>
           <Card.Title>Rick And Morty Fansite</Card.Title>
           <Card.Text>
-            Choose your favourites!
+            All Characters!
           </Card.Text>
-          {/* <Button variant="success">Go somewhere</Button> */}
+          <Button variant="success">Go somewhere</Button>
         </Card.Body>
       </Card>
       
@@ -27,10 +27,10 @@ function Episodes () {
 
         </Card>
         </div>
-        <GetEpisodes></GetEpisodes>
+
 
         </>
       );
     }
 
-export default Episodes;
+export default CharTop;

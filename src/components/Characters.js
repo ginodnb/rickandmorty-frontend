@@ -3,23 +3,25 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Item from "./Item";
 import "../styles/Episode.css";
+import ItemChar from "./ItemChar";
+import CharTop from "./CharTop";
 
-function GetEpisodes() {
+function Characters() {
   const [results, setResults] = useState([]);
   const [serverLink, setServerLink] = useState(process.env.REACT_APP_SERVER);
   const [showItems, setShowItems] = useState(false);
 
   useEffect(() => {
-    const getEpisodes = async () => {
-      let resultsAPI = await axios.get(`${serverLink}/rick/episodeapi`);
-      console.log("inside getepisodes", resultsAPI.data.results);
+    const getChar = async () => {
+      let resultsAPI = await axios.get(`${serverLink}/rick/charapi`);
+      console.log("inside Characters", resultsAPI.data.results);
       setResults(resultsAPI.data.results);
-      // console.log(results);
-      // setShowItems(true);
+      console.log(results);
+      setShowItems(true);
+      setServerLink();
     };
-    getEpisodes();
+    getChar();
   }, []);
 
   return (
@@ -35,6 +37,7 @@ function GetEpisodes() {
     // </Card>
 
     <div className="cardParent">
+      <CharTop />
       {/* {showItems &&
         results.map((item, index) => (
           <div className="cardStyle">
@@ -49,24 +52,10 @@ function GetEpisodes() {
         ))} */}
       {/* {showItems && results.map((item,index)=>(<Item key={index} item={item}/>))} */}
        
-      {
-        results.map((item, idx) => <Item key={idx} item={item} />)}
+      {showItems &&
+        results.map((item, idx) => <ItemChar index={idx} item={item} />)}
     </div>
   );
 }
 
-export default GetEpisodes;
-
-{
-  /* <Item key={index} item={item}>{index+1}</Item> */
-}
-
-// <Card key={index} item={item} style={{ width: '18rem' }}>
-// <Card.Img variant="top" src={item.image} />
-// <Card.Body>
-//     <Card.Title key={index} item={item} >{item.name}</Card.Title>
-//     <Card.Title>{item.results.name}</Card.Title>
-
-//     {/* <Button variant="primary" onClick={()=> {(props.item)}}>Add to faves</Button> */}
-// </Card.Body>
-// </Card>
+export default Characters;

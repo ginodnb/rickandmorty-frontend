@@ -1,0 +1,33 @@
+.cardParent {
+    display: flex;
+    flex-direction: row;
+    /* height: 300px; */
+    flex-wrap: wrap;
+}
+
+.cardStyle {
+    height: 30vh;
+    width: 25vw;
+}
+
+.cards {
+    display: inline-block;
+
+} 
+
+#hero {
+    object-fit: cover;
+    height: 100%; 
+    min-width: 150px;
+}
+
+#cardOne {
+    height: 100%;
+    width: 50vw;
+}
+
+#episode-render {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

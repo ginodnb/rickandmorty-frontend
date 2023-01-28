@@ -1,0 +1,71 @@
+.logo {
+    width: 35px;
+}
+
+#footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
+.cardStyle {
+    background-color: #F95B03;
+}
+
+.me-auto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    padding-right: 10px;
+    color: rgb(241, 239, 222);
+}
+
+#basic-nav-dropdown {
+    color: rgb(241, 239, 222);
+}
+
+#burger {
+    color: rgb(241, 239, 222);
+}
+
+#return h1 {
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(255, 233, 207);
+}
+
+#faves {
+    background-color: #1d7eb6;
+    margin: 5px;
+    width: 18rem;
+}
+
+#fave-parent {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#button-holder {
+    display: flex;
+    justify-content: space-around;
+}
+
+#form {
+    background-color: #d7d7d7;
+    text-align: center;
+}
+
+/* #modal-parent {
+
+} */
+
+/* .modal {
+    background-color: #6b6b6b;
+} */
