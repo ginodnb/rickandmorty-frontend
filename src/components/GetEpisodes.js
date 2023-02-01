@@ -12,8 +12,9 @@ function GetEpisodes() {
   const [showItems, setShowItems] = useState(false);
 
   useEffect(() => {
-    console.log(serverLink)
+
     const getEpisodes = async () => {
+      console.log(serverLink)
       let resultsAPI = await axios.get(`${serverLink}/rick/episodeapi`);
       console.log("inside getepisodes", resultsAPI.data.results);
 
