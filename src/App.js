@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/Episodes" element={<Episodes />} />
           <Route exact path="/Characters" element={<Characters />} />
 
-          <Route exact path="/Favourites" element={<Favourites />} />
+          <Route exact path="/favourites" element={<Favourites />} />
         </Routes>
 
         <Footer />
