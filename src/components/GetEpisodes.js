@@ -14,7 +14,7 @@ function GetEpisodes() {
   useEffect(() => {
 
     const getEpisodes = async () => {
-      console.log(serverLink)
+      console.log(process.env.REACT_APP_SERVER)
       let resultsAPI = await axios.get(`${serverLink}/rick/episodeapi`);
       console.log("inside getepisodes", resultsAPI.data.results);
 
