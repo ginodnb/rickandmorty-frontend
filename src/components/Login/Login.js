@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import LoginButton from "./LoginButton";
-// import "../"
+import "./Login.css"
 
 function Login() {
   return (
+    <div id="card-parentt" >
     <Card>
       <Card.Body style={{ width: "18rem" }}>
         <Card.Title>Log in</Card.Title>
@@ -12,6 +13,7 @@ function Login() {
         <LoginButton />
       </Card.Body>
     </Card>
+    </div>
   );
 }
 
